@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ServiceFind - Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/mdb.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+	<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">ServicefinD</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="category.html">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="addservice.html">Add Your Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#login" data-toggle="modal">Log In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Start of log in Modal -->
+    <div id="login" class="modal fade" role="dialog">
+	        <div class="modal-dialog">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <h4 class="modal-title" style="margin: 0 auto; width: 65%;">Log In into Your Account</h4>
+	                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+	                </div>
+	                <div class="modal-body">
+	                    <div class="row">
+					        <div style="margin: 0 auto; width: 60%;">
+					          <form>
+					            <div class="form-group">
+					              <input type="text" class="form-control" placeholder="username" name="username"  required>
+					            </div>
+					            <div class="form-group">
+					              <input type="password" class="form-control" placeholder="password" name="psssword"  required>
+					            </div>
+					            <button type="submit" class="btn btn-warning custom-btn" style="margin: auto; display: block;" name="sigin">Log In
+            					</button>
+            					<div class="form-check" style="font-size: 15px;">
+					              <input type="checkbox" class="form-check-input" id="remember-me">
+					              <label class="form-check-label" for="remember-me">Remember me</label>
+					            </div>
+					          </form>                   
+						    </div>
+						</div>
+						<div class="text-center login-help">
+							Not a Member? <a href="#register" data-toggle="modal" data-dismiss="modal">Register Here</a>
+						</div>
+				  	</div>	
+				</div>
+			</div>
+	</div>
+    <!-- End of log in Modal -->
+
+    <!-- start of register modal -->
+    <div id="register" class="modal fade" role="dialog">
+	        <div class="modal-dialog">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <h4 class="modal-title" style="margin: 0 auto; width: 65%;">Create a new Account</h4>
+	                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+	                </div>
+	                <div class="modal-body">
+	                    <div class="row">
+					        <div style="margin: 0 auto; width: 60%;">
+					          <form>
+					            <div class="form-group">
+					              <input type="text" class="form-control" placeholder="Full Name" name="name"  required>
+					            </div>
+					            <div class="form-group">
+					              <input type="text" class="form-control" placeholder="Username" name="username"  required>
+					            </div>
+					            <div class="form-group">
+					              <input type="email" class="form-control" placeholder="Email" name="email"  required>
+					            </div>
+					            <div class="form-group">
+					              <input type="password" class="form-control" placeholder="Password" name="password"  required>
+					            </div>
+					            <div class="form-group">
+					              <input type="password" class="form-control" placeholder="Re-type Password"  required>
+					            </div>
+					            <button type="submit" class="btn btn-warning custom-btn" style="margin: auto; display: block;" name="sigin">Register
+            					</button>
+					          </form>                   
+						    </div>
+						</div>
+						<div class="text-center login-help">
+							Already have an account? <a href="#login" data-toggle="modal" data-dismiss="modal">Log In</a>
+						</div>
+				  	</div>	
+				</div>
+			</div>
+	</div>
+    <!-- end of register modal -->
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/coverImg.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h2>View all Available Categories</h2><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      
+      <div>
+      	<div class="col-lg-8 col-md-10 mx-auto">
+        	  <div>
+        		<h3 class="post-title text-center">
+                	All Categories
+              	</h3><br>	  	
+        	  </div>
+        <div class="row">
+          <div class="col-md-3 mb-3 mb-md-0">
+            <div class="card h-100 category view hm-zoom" role="button">
+              <img class="card-img-top img-fluid" src="img/card3.jpg" alt="" id="teamImg">
+              <div class="card-body text-center">
+                <a href="viewitem.html"></a>
+                <p class="card-title m-0">Category 1</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3 mb-md-0">
+            <div class="card h-100 category view hm-zoom">
+              <img class="card-img-top img-fluid" src="img/card3.jpg" alt="" id="teamImg">
+              <div class="card-body text-center">
+                <a href="viewitem.html"></a>
+                <p class="card-title m-0">Category 2</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3 mb-md-0">
+            <div class="card h-100 category view hm-zoom">
+              <img class="card-img-top img-fluid" src="img/card3.jpg" alt="">
+              <div class="card-body text-center">
+                <a href="viewitem.html"></a>
+                <p class="card-title m-0">Category 3</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3 mb-md-0">
+            <div class="card h-100 category view hm-zoom">
+              <img class="card-img-top img-fluid" src="img/card3.jpg" alt="">
+              <div class="card-body text-center">
+                <a href="viewitem.html"></a>
+                <p class="card-title m-0">Category 4</p>
+              </div>
+            </div>
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col-md-3 mb-3 mb-md-0">
+            <div class="card h-100 category view hm-zoom">
+              <img class="card-img-top img-fluid" src="img/card3.jpg" alt="" id="teamImg">
+              <div class="card-body text-center">
+                <a href="viewitem.html"></a>
+                <p class="card-title m-0">Category 5</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3 mb-md-0">
+            <div class="card h-100 category view hm-zoom">
+              <img class="card-img-top img-fluid" src="img/card3.jpg" alt="" id="teamImg">
+              <div class="card-body text-center">
+                <a href="viewitem.html"></a>
+                <p class="card-title m-0">Category 6</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3 mb-md-0">
+            <div class="card h-100 category view hm-zoom">
+              <img class="card-img-top img-fluid" src="img/card3.jpg" alt="">
+              <div class="card-body text-center">
+                <a href="viewitem.html"></a>
+                <p class="card-title m-0">Category 7</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3 mb-md-0">
+            <div class="card h-100 category view hm-zoom">
+              <img class="card-img-top img-fluid" src="img/card3.jpg" alt="">
+              <div class="card-body text-center">
+                <a href="viewitem.html"></a>
+                <p class="card-title m-0">Category 8</p>
+              </div>
+            </div>
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col-md-3 mb-3 mb-md-0">
+            <div class="card h-100 category view hm-zoom">
+              <img class="card-img-top img-fluid" src="img/card3.jpg" alt="" id="teamImg">
+              <div class="card-body text-center">
+                <a href="viewitem.html"></a>
+                <p class="card-title m-0">Category 9</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3 mb-md-0">
+            <div class="card h-100 category view hm-zoom">
+              <img class="card-img-top img-fluid" src="img/card3.jpg" alt="" id="teamImg">
+              <div class="card-body text-center">
+                <a href="viewitem.html"></a>
+                <p class="card-title m-0">Category 10</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3 mb-md-0">
+            <div class="card h-100 category view hm-zoom">
+              <img class="card-img-top img-fluid" src="img/card3.jpg" alt="">
+              <div class="card-body text-center">
+                <a href="viewitem.html"></a>
+                <p class="card-title m-0">Category 11</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3 mb-md-0">
+            <div class="card h-100 category view hm-zoom">
+              <img class="card-img-top img-fluid" src="img/card3.jpg" alt="">
+              <div class="card-body text-center">
+                <a href="viewitem.html"></a>
+                <p class="card-title m-0">Category 12</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+	
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row footer-class">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <!-- <i class="fa fa-circle fa-stack-2x"></i> -->
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <!-- <i class="fa fa-circle fa-stack-2x"></i> -->
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <!-- <i class="fa fa-circle fa-stack-2x"></i> -->
+                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy;2018 servicefind ltd, All rights Reserved</p>
+            <div class="text-center footer-text">
+            		<a href="#">About Us</a> | <a href="#">How it Works</a> | <a href="#">Help and Support</a><br>
+            		<a href="#">Privacy and cookie policy</a> | <a href="#">Terms and Conditions</a><br>	
+            		<a href="#contactus" data-toggle="modal">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Start of contact us modal -->
+    <div id="contactus" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title" style="margin: 0 auto; width: 65%;">We'll love to hear from you, leave a message.</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="row">
+                  <div style="margin: 0 auto; width: 60%;">
+                    <form>
+                      <div class="row">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Name" name="username"  required>
+                        </div>
+                        <div class="col">
+                          <input type="email" class="form-control" placeholder="Email Address" name="email"  required>
+                        </div>
+                      </div>
+                      <div class="md-form">
+                            <textarea class="md-textarea" style="height: 100px" required="" placeholder="Leave your message here" cols="500" rows=""></textarea>
+                        </div>
+                        <div class="">
+                            <a href="#" class="btn btn-success">Contact Us</a>
+                        </div>
+                    </form>                   
+                </div>
+            </div>
+            </div>  
+        </div>
+      </div>
+  </div>
+    <!-- End of contact us modal -->
+
+	<!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+      $(".category").click(function() {
+        window.location = $(this).find("a").attr("href");
+      })
+    </script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+</body>
+</html>

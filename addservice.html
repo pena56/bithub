@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ServiceFind - Packages</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/mdb.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+	<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">ServicefinD</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="category.html">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="addservice.html">Add Your Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#login" data-toggle="modal">Log In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Start of log in Modal -->
+    <div id="login" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title" style="margin: 0 auto; width: 65%;">Log In into Your Account</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="row">
+                  <div style="margin: 0 auto; width: 60%;">
+                    <form>
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="username" name="username"  required>
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control" placeholder="password" name="psssword"  required>
+                      </div>
+                      <button type="submit" class="btn btn-warning custom-btn" style="margin: auto; display: block;" name="sigin">Log In
+                      </button>
+                      <div class="form-check" style="font-size: 15px;">
+                        <input type="checkbox" class="form-check-input" id="remember-me">
+                        <label class="form-check-label" for="remember-me">Remember me</label>
+                      </div>
+                    </form>                   
+                </div>
+            </div>
+            <div class="text-center login-help">
+              Not a Member? <a href="#register" data-toggle="modal" data-dismiss="modal">Register Here</a>
+            </div>
+            </div>  
+        </div>
+      </div>
+  </div>
+    <!-- End of log in Modal -->
+
+    <!-- start of register modal -->
+    <div id="register" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title" style="margin: 0 auto; width: 65%;">Create a new Account</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="row">
+                  <div style="margin: 0 auto; width: 60%;">
+                    <form>
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Full Name" name="name"  required>
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Username" name="username"  required>
+                      </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email" name="email"  required>
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password" name="password"  required>
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Re-type Password"  required>
+                      </div>
+                      <button type="submit" class="btn btn-warning custom-btn" style="margin: auto; display: block;" name="sigin">Register
+                      </button>
+                    </form>                   
+                </div>
+            </div>
+            <div class="text-center login-help">
+              Already have an account? <a href="#login" data-toggle="modal" data-dismiss="modal">Log In</a>
+            </div>
+            </div>  
+        </div>
+      </div>
+  </div>
+    <!-- end of register modal -->
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/coverImg1.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>Add Your Service</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      
+        <div class="col-lg-8 col-md-10 mx-auto">
+        	<div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+              <div class="card h-100">
+                <img class="card-img-top img-fluid" src="img/card1.jpg" alt="" id="teamImg">
+                <div class="card-body text-center">
+                  <h3 class="card-title m-0">Basic Package</h3><br>
+                    <h4>Free<small>/year</small></h4>
+                    <h5>Try it out for free.</h5>
+                    <div class="footer-text">
+                      <p>
+                        Recieve <strong>Ratings and review</strong><br>
+                        <strong>Edit</strong> Your Business Page<br>
+                        Add a<strong> Business Cover Photo</strong><br>
+                        Add <strong>Social Media Links</strong><br>
+                        List Your <strong>Buisness Service</strong><br>
+                        <strong>One </strong> Buisness page for a single buisness
+                        <hr><hr><hr><hr><hr><hr><hr><hr><hr>
+                      </p>
+                    </div>
+                    <div class="text-center">
+                        <a href="addserviceform.html" class="btn btn-category btn-sm">Get Started</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0">
+              <div class="card h-100">
+                <img class="card-img-top img-fluid" src="img/card2.jpg" alt="">
+                <div class="card-body text-center">
+                  <h3 class="card-title m-0">Standard Package</h3><br>
+                    <h4>$$$<small>/year</small></h4>
+                    <h5>Coming Soon.</h5>
+                    <div class="footer-text">
+                      <p>
+                        Recieve <strong>Ratings and review</strong><br>
+                        <strong>Edit</strong> Your Business Page<br>
+                        Add a<strong> Business Cover Photo</strong><br>
+                        Add <strong>Social Media Links</strong><br>
+                        List Your <strong>Buisness Service</strong><br>
+                        <strong>One </strong> Buisness page for a single buisness<br>
+                        Up to <strong>Two buisness pages</strong> for multiple branch<br>
+                        List Your <strong>Buisness Amenities</strong><br>
+                        Online Help and Support<br>
+                        Upload up to <strong>20 photos</strong><br>
+                        Add a <strong>Buisness Summary</strong>
+                      </p><hr><hr><hr>
+                    </div>
+                    <div class="text-center">
+                            <button class="btn btn-category btn-sm">Get Started</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img class="card-img-top img-fluid" src="img/card4.jpg" alt="">
+                <div class="card-body text-center">
+                  <h3 class="card-title m-0">Premium Package</h3><br>
+                    <h4>$$$<small>/year</small></h4>
+                    <h5>Coming Soon.</h5>
+                    <div class="footer-text">
+                      <p>
+                        Recieve <strong>Ratings and review</strong><br>
+                        <strong>Edit</strong> Your Business Page<br>
+                        Add a<strong> Business Cover Photo</strong><br>
+                        Add <strong>Social Media Links</strong><br>
+                        List Your <strong>Buisness Service</strong><br>
+                        <strong>One </strong> Buisness page for a single buisness<br>
+                        Up to <strong>Two buisness pages</strong> for multiple branch<br>
+                        List Your <strong>Buisness Amenities</strong><br>
+                        Online Help and Support<br>
+                        Upload up to <strong>50 photos</strong><br>
+                        Add a <strong>Buisness Summary</strong><br>
+                        Upload <strong>Videos</strong><br>
+                        <strong>Exclusive Social media promotion</strong>
+                      </p>
+                    </div>
+                    <div class="text-center">
+                            <button class="btn btn-category btn-sm">Get Started</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+          
+    </div>
+
+	
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row footer-class">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <!-- <i class="fa fa-circle fa-stack-2x"></i> -->
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <!-- <i class="fa fa-circle fa-stack-2x"></i> -->
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <!-- <i class="fa fa-circle fa-stack-2x"></i> -->
+                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy;2018 servicefind ltd, All rights Reserved</p>
+            <div class="text-center footer-text">
+                <a href="#">About Us</a> | <a href="#">How it Works</a> | <a href="#">Help and Support</a><br>
+                <a href="#">Privacy and cookie policy</a> | <a href="#">Terms and Conditions</a><br>  
+                <a href="#contactus" data-toggle="modal">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Start of contact us modal -->
+    <div id="contactus" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title" style="margin: 0 auto; width: 65%;">We'll love to hear from you, leave a message.</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="row">
+                  <div style="margin: 0 auto; width: 60%;">
+                    <form>
+                      <div class="row">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Name" name="username"  required>
+                        </div>
+                        <div class="col">
+                          <input type="email" class="form-control" placeholder="Email Address" name="email"  required>
+                        </div>
+                      </div>
+                      <div class="md-form">
+                            <textarea class="md-textarea" style="height: 100px" required="" placeholder="Leave your message here" cols="500" rows=""></textarea>
+                        </div>
+                        <div class="">
+                            <a href="#" class="btn btn-success">Contact Us</a>
+                        </div>
+                    </form>                   
+                </div>
+            </div>
+            </div>  
+        </div>
+      </div>
+  </div>
+    <!-- End of contact us modal -->
+
+	<!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+</body>
+</html>
